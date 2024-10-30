@@ -10,49 +10,46 @@
 
     <h1>Vendo Machine</h1>
 
-    <fieldset>
+    <fieldset style="width: 500px;">
         <legend>Products</legend>
         
         <label>
-            <input type="checkbox" name="product" value="Coke"> Coke - P15
+            <input type="checkbox" name="product" value="Coke"> Coke - ₱15
         </label><br>
         
         <label>
-            <input type="checkbox" name="product" value="Sprite"> Sprite - P20
+            <input type="checkbox" name="product" value="Sprite"> Sprite - ₱20
         </label><br>
         
         <label>
-            <input type="checkbox" name="product" value="Royal"> Royal - P20
+            <input type="checkbox" name="product" value="Royal"> Royal - ₱20
         </label><br>
         
         <label>
-            <input type="checkbox" name="product" value="Pepsi"> Pepsi - P15
+            <input type="checkbox" name="product" value="Pepsi"> Pepsi - ₱15
         </label><br>
         
         <label>
-            <input type="checkbox" name="product" value="Mountain Dew"> Mountain Dew - P20
+            <input type="checkbox" name="product" value="Mountain Dew"> Mountain Dew - ₱20
         </label>
         
     </fieldset>
 
-    <fieldset>
+    <fieldset style="width: 500px;">
         <legend>Options</legend>
         
-        <div id="options">
-
             <label for="size">Size:</label>
             <select id="size" name="size">
                 <option value="Regular">Regular</option>
-                <option value="Up-Size">Up-Size (add P5)</option>
-                <option value="Jumbo">Jumbo (add P10)</option>
+                <option value="Up-Size">Up-Size (add ₱5)</option>
+                <option value="Jumbo">Jumbo (add ₱10)</option>
             </select>
 
             <label for="quantity">Qty:</label>
-            <input type="number" id="quantity" name="quantity" min="1" value="1" style="width: 60px;">
-
+            <input type="number" id="quantity" name="quantity" min="0" value="1" style="width: 140px;">
+            &nbsp;
             <button type="button">Checkout</button>
-        </div>
-
+        
     </fieldset>
 
 </body>
