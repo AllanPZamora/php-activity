@@ -6,7 +6,9 @@
     <title>Peys App</title>
 </head>
 <body>
+    
     <h1>Peys App</h1>
+
     <form method="POST">
         <label for="size">Select Photo Size:</label>
         <input type="range" name="size" id="size" min="10" max="100" step="10" value="60">
@@ -21,10 +23,10 @@
 
         <?php 
             if (isset($_REQUEST['bProcess'])) {
-                $borderColor = $_REQUEST['cBorder'];
-                $size = $_REQUEST['size'];
-                
-                echo '<img src="images/images.png" width="' . (empty($size) ? '60' : $size) . '%" height="' . (empty($size) ? '60' : $size) . '%" style="border:5px solid ' . (empty($borderColor) ? '#000000' : $borderColor) . ';">';
+                $borderColor = $_REQUEST['cBorder'] ?? '#000000';
+                $imgSize = $_REQUEST['size'] ?? '10';
+
+                echo '<img src="http://localhost/images.png" alt="image" width="' . (empty($imgSize) ? '10' : $imgSize) . '%" height="' . (empty($imgSize) ? '10' : $imgSize) . '%" style="border:5px solid ' . (empty($borderColor) ? '#000000' : $borderColor) . ';">';
             }
         ?>
     </form>
